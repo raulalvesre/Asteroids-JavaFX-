@@ -9,7 +9,7 @@ import org.raul.App;
 public abstract class Character {
 
     private Polygon character;
-    private Point2D movement;
+    private  Point2D movement;
     private boolean alive;
 
     public Character(Polygon polygon, int x, int y) {
@@ -46,8 +46,8 @@ public abstract class Character {
         double changeX = Math.cos(Math.toRadians(this.character.getRotate()));
         double changeY = Math.sin(Math.toRadians(this.character.getRotate()));
 
-        changeX *= 0.03;
-        changeY *= 0.03;
+        changeX *= 0.01;
+        changeY *= 0.01;
 
         this.movement = this.movement.add(changeX, changeY);
     }

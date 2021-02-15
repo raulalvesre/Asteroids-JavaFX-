@@ -24,7 +24,7 @@ public class App extends Application {
     private List<Character> asteroids;
     private List<Character> projectiles;
 
-    //se rodar aqui direto da erro
+    //se rodar aqui direto, da erro
     public static void almostMain() {
         launch();
     }
